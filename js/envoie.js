@@ -3,8 +3,8 @@ $("#myForm").submit(function(e){
     var form_url = $(this).attr("action"); //récupérer l'URL du formulaire
     var form_method = $(this).attr("method"); //récupérer la méthode GET/POST du formulaire
     var form_data = $(this).serialize(); //Encoder les éléments du formulaire pour la soumission
-    var id = $('id').val();
-    var date = $('date').val();
+    var id = $('#id').val();
+    var date = $('#date').val();
 
 
     $.ajax({
